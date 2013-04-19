@@ -1,6 +1,15 @@
 // Imports
 
 @import "colors.scss";
+@import "vendor/foundation/foundation-global";
+@import "vendor/foundation/components/global"; 
+@import "vendor/foundation/components/buttons";
+
+$schemeOrange: #fc7400;
+$schemeLighterBlue: #0B6AA1;
+$schemeDarkerBlue: #004f94;
+$schemeGray: #666666;
+
 
 .sc-logo-img {
     padding-top: 5px;
@@ -16,6 +25,13 @@
     height: 300px;
     background: url('images/heroback.jpg') no-repeat right;
 }
+
+@media all and (max-width: 768px) {
+    .sc-hero-unit {
+        height: 300px;
+        background: #ffffff;
+    }
+}
 .sc-hero-leader {
     padding-top: 15px;
     padding-bottom: 25px;
@@ -27,13 +43,33 @@
     font-style: bold;
     width: auto;
     line-height: 40px;
-
+}
+.p-wht-trans {
+    background: rgba(255,255,255, 0.7);
+    font-size: 18px;
+    font-style: normal;
+    width: auto;
+    line-height: 24px;
+}
+.call-to-action-btn {
+  @include button(emCalc(12px), $schemeDarkerBlue, true, false, false, false);
+  color: $white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.learn-more-btn {
+    @include button(emCalc(12px), $grayLighter, true, false, false, false);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 .sc-back-gray {
     background: $grayLighter;
     padding-top: 30px;
     padding-bottom: 30px;
     margin-bottom: 7px;
+    z-index: -100;
 }
 
 .sc-feature-img {
@@ -57,7 +93,7 @@
 .sc-back-main {
     padding-top: 20px;
     padding-bottom: 0px;
-    margin-bottom: 7px;
+    margin-bottom: 30px;
     //background: url('images/wavegrid.png');
 }
 .sc-footer {
@@ -102,4 +138,42 @@
     ul,li {
         background: url('images/wavegrid.png');
     }
+}
+.grid-border {
+    border: solid $gray 1px;
+    padding: 5px 5px 5px 5px;
+}
+
+.inner-shadow {
+   -moz-box-shadow:    inset 0 0 10px $grayDarker;
+   -webkit-box-shadow: inset 0 0 10px $grayDarker;
+   box-shadow:         inset 0 0 10px $grayDarker;
+   padding: 12px 12px 12px 12px;
+   border-radius: 5px;
+   background: lighten($grayLighter, 10%);
+}
+
+.outer-shadow {
+    -moz-box-shadow:    2px 2px 2px 2px #ccc;
+    -webkit-box-shadow: 2px 2px 2px 2px #ccc;
+    box-shadow:         2px 2px 2px 2px #ccc;
+    padding: 12px 12px 12px 12px;
+    border-radius: 5px;
+    background: lighten($grayLighter, 10%);
+}
+
+.secondary-beta-announcement {
+    background: url('images/banner.png') right no-repeat;
+    height: 77px;
+    color: $white;
+    text-align: right;
+    vertical-align: center;
+    h1 {
+        font-size: 28px;
+        color: #ffffff;
+        padding-top: 15px;
+        padding-right: 4px;
+
+    }
+    margin-bottom: 10px;
 }
