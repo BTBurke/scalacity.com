@@ -7233,45 +7233,47 @@ button.button.large {
   padding-right: 50px;
 }
 
-/* line 24, ../../app/styles/custom/session.scss */
-.sc-hero-unit {
-  height: 300px;
-  background: url("images/heroback.jpg") no-repeat right;
-}
-
-@media all and (max-width: 768px) {
-  /* line 30, ../../app/styles/custom/session.scss */
+@media all and (min-width: 768px) {
+  /* line 25, ../../app/styles/custom/session.scss */
   .sc-hero-unit {
-    height: 300px;
+    min-height: 300px;
+    background: url("images/heroback.jpg") no-repeat right;
+  }
+}
+@media all and (max-width: 767px) {
+  /* line 32, ../../app/styles/custom/session.scss */
+  .sc-hero-unit {
+    min-height: 300px;
     background: #ffffff;
   }
 }
-/* line 35, ../../app/styles/custom/session.scss */
+/* line 37, ../../app/styles/custom/session.scss */
 .sc-hero-leader {
   padding-top: 15px;
   padding-bottom: 25px;
   margin-right: auto;
 }
 
-/* line 40, ../../app/styles/custom/session.scss */
+/* line 42, ../../app/styles/custom/session.scss */
 .h1-wht-trans {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.8);
   font-size: 36px;
   font-style: bold;
   width: auto;
   line-height: 40px;
+  color: #fc7400;
 }
 
-/* line 47, ../../app/styles/custom/session.scss */
+/* line 50, ../../app/styles/custom/session.scss */
 .p-wht-trans {
-  background: rgba(255, 255, 255, 0.7);
-  font-size: 18px;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 19px;
   font-style: normal;
   width: auto;
   line-height: 24px;
 }
 
-/* line 54, ../../app/styles/custom/session.scss */
+/* line 57, ../../app/styles/custom/session.scss */
 .call-to-action-btn {
   border-style: solid;
   border-width: 1px;
@@ -7308,7 +7310,7 @@ button.button.large {
   color: white;
 }
 
-/* line 61, ../../app/styles/custom/session.scss */
+/* line 64, ../../app/styles/custom/session.scss */
 .learn-more-btn {
   border-style: solid;
   border-width: 1px;
@@ -7344,7 +7346,7 @@ button.button.large {
   color: #333333;
 }
 
-/* line 67, ../../app/styles/custom/session.scss */
+/* line 70, ../../app/styles/custom/session.scss */
 .sc-back-gray {
   background: #eeeeee;
   padding-top: 30px;
@@ -7353,89 +7355,123 @@ button.button.large {
   z-index: -100;
 }
 
-/* line 75, ../../app/styles/custom/session.scss */
+/* line 78, ../../app/styles/custom/session.scss */
+.sc-back-gray-gradient {
+  background: #eeeeee;
+  /* Old browsers */
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(white), color-stop(0.5, #f1f1f1), color-stop(0.51, #e1e1e1), to(#f6f6f6));
+  background: -webkit-linear-gradient(white 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+  background: -moz-linear-gradient(white 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+  background: -o-linear-gradient(white 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+  background: linear-gradient(#ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 );
+  /* IE6-9 */
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 7px;
+}
+
+/* line 91, ../../app/styles/custom/session.scss */
 .sc-feature-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 81, ../../app/styles/custom/session.scss */
+/* line 97, ../../app/styles/custom/session.scss */
 .sc-feature-text {
   margin-left: auto;
   margin-right: auto;
 }
+/* line 101, ../../app/styles/custom/session.scss */
+.sc-feature-text em {
+  color: #004f94;
+  text-emphasis: bold;
+  font-style: normal;
+  font-weight: bolder;
+}
 
-/* line 88, ../../app/styles/custom/session.scss */
+/* line 110, ../../app/styles/custom/session.scss */
 .sc-gray-spacer {
   background: url("images/wavegrid.png");
   height: 20px;
 }
 
-/* line 93, ../../app/styles/custom/session.scss */
+/* line 114, ../../app/styles/custom/session.scss */
+.sc-white-spacer {
+  height: 10px;
+}
+
+/* line 118, ../../app/styles/custom/session.scss */
 .sc-back-main {
   padding-top: 20px;
   padding-bottom: 0px;
   margin-bottom: 30px;
 }
 
-/* line 99, ../../app/styles/custom/session.scss */
+/* line 124, ../../app/styles/custom/session.scss */
 .sc-footer {
-  background: url("images/wavegrid.png");
+  background: url("images/hex.png");
   min-height: 80px;
   padding-left: 50px;
   padding-top: 10px;
   padding-bottom: 8px;
 }
-/* line 107, ../../app/styles/custom/session.scss */
+/* line 132, ../../app/styles/custom/session.scss */
 .sc-footer a {
   color: #222222;
 }
-/* line 111, ../../app/styles/custom/session.scss */
+/* line 136, ../../app/styles/custom/session.scss */
 .sc-footer a:hover {
   color: #049cdb;
 }
 
-/* line 116, ../../app/styles/custom/session.scss */
+/* line 141, ../../app/styles/custom/session.scss */
 .icon-gray {
   color: #555555;
 }
 
-/* line 120, ../../app/styles/custom/session.scss */
+/* line 145, ../../app/styles/custom/session.scss */
 .icon-twitter-blue {
   color: #4099ff;
 }
 
-/* line 124, ../../app/styles/custom/session.scss */
+/* line 149, ../../app/styles/custom/session.scss */
 .sc-top-color-bar {
   height: 6px;
   border: solid #eee 1px;
   background: #fc7400;
 }
 
-/* line 130, ../../app/styles/custom/session.scss */
+/* line 155, ../../app/styles/custom/session.scss */
 .sc-bottom-color-bar {
   height: 6px;
   border: solid #eee 1px;
   background: #004f94;
 }
 
-/* line 135, ../../app/styles/custom/session.scss */
+/* line 160, ../../app/styles/custom/session.scss */
 .sc-top-bar-background {
   background: url("images/wavegrid.png");
 }
-/* line 138, ../../app/styles/custom/session.scss */
+/* line 163, ../../app/styles/custom/session.scss */
 .sc-top-bar-background ul, .sc-top-bar-background li {
   background: url("images/wavegrid.png");
 }
 
-/* line 142, ../../app/styles/custom/session.scss */
+/* line 167, ../../app/styles/custom/session.scss */
 .grid-border {
   border: solid #555555 1px;
   padding: 5px 5px 5px 5px;
 }
 
-/* line 147, ../../app/styles/custom/session.scss */
+/* line 172, ../../app/styles/custom/session.scss */
 .inner-shadow {
   -moz-box-shadow: inset 0 0 10px #222222;
   -webkit-box-shadow: inset 0 0 10px #222222;
@@ -7445,7 +7481,7 @@ button.button.large {
   background: white;
 }
 
-/* line 156, ../../app/styles/custom/session.scss */
+/* line 181, ../../app/styles/custom/session.scss */
 .outer-shadow {
   -moz-box-shadow: 2px 2px 2px 2px #ccc;
   -webkit-box-shadow: 2px 2px 2px 2px #ccc;
@@ -7455,19 +7491,156 @@ button.button.large {
   background: white;
 }
 
-/* line 165, ../../app/styles/custom/session.scss */
-.secondary-beta-announcement {
-  background: url("images/banner.png") right no-repeat;
-  height: 77px;
-  color: white;
-  text-align: right;
+/* line 189, ../../app/styles/custom/session.scss */
+.secondary-beta-announcement2 {
+  background: url(images/hex.png) repeat;
+  text-align: center;
   vertical-align: center;
-  margin-bottom: 10px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin-bottom: 7px;
 }
-/* line 171, ../../app/styles/custom/session.scss */
-.secondary-beta-announcement h1 {
-  font-size: 28px;
-  color: #ffffff;
+/* line 197, ../../app/styles/custom/session.scss */
+.secondary-beta-announcement2 .headliner {
+  text-align: center;
+  color: #fc7400;
+  font-size: 24px;
+}
+/* line 202, ../../app/styles/custom/session.scss */
+.secondary-beta-announcement2 .headfollow {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+}
+/* line 207, ../../app/styles/custom/session.scss */
+.secondary-beta-announcement2 a {
+  color: #004f94;
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: -10px;
+}
+/* line 212, ../../app/styles/custom/session.scss */
+.secondary-beta-announcement2 a:hover {
+  color: #006ac7;
+}
+/* line 216, ../../app/styles/custom/session.scss */
+.secondary-beta-announcement2 .wht-spacer {
+  background: white;
+  height: 7px;
+}
+
+/* line 222, ../../app/styles/custom/session.scss */
+.sc-about-back {
+  background: url("images/hex.png") repeat;
+}
+
+/* line 225, ../../app/styles/custom/session.scss */
+.sc-about-content {
+  margin-top: 15px;
+  margin-bottom: 15px;
   padding-top: 15px;
-  padding-right: 4px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #ffffff;
+  border-radius: 10px;
+  color: #222222;
+  font-size: 24px;
+  line-height: 28px;
+}
+/* line 235, ../../app/styles/custom/session.scss */
+.sc-about-content h5 {
+  color: #004f94;
+  font-size: 28px;
+  text-decoration: bold;
+}
+
+/* line 246, ../../app/styles/custom/session.scss */
+.sc-learn-back {
+  background: url("images/hex.png") repeat;
+}
+
+/* line 249, ../../app/styles/custom/session.scss */
+.sc-learn-content {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #ffffff;
+  border-radius: 10px;
+  color: #222222;
+  font-size: 20px;
+  line-height: 24px;
+}
+/* line 259, ../../app/styles/custom/session.scss */
+.sc-learn-content h5 {
+  color: #004f94;
+  font-size: 36px;
+  text-decoration: bold;
+  text-align: center;
+}
+/* line 268, ../../app/styles/custom/session.scss */
+.sc-learn-content em {
+  color: #004f94;
+  text-emphasis: bold;
+  font-style: normal;
+  font-weight: bolder;
+}
+
+/* line 275, ../../app/styles/custom/session.scss */
+.sc-learn-long {
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  color: #222222;
+  font-size: 20px;
+  line-height: 24px;
+}
+/* line 280, ../../app/styles/custom/session.scss */
+.sc-learn-long h5 {
+  color: #004f94;
+  font-size: 36px;
+  text-decoration: bold;
+  text-align: center;
+}
+/* line 289, ../../app/styles/custom/session.scss */
+.sc-learn-long em {
+  color: #004f94;
+  text-emphasis: bold;
+  font-style: normal;
+  font-weight: bolder;
+}
+
+/* line 297, ../../app/styles/custom/session.scss */
+.sc-learn-feature-inset {
+  -moz-box-shadow: 2px 2px 2px 2px #ccc;
+  -webkit-box-shadow: 2px 2px 2px 2px #ccc;
+  box-shadow: 2px 2px 2px 2px #ccc;
+  padding: 1px 1px 1px 1px;
+  border-radius: 5px;
+  background: white;
+  margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 15px;
+}
+
+/* line 310, ../../app/styles/custom/session.scss */
+.sc-learn-features {
+  vertical-align: center;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-right: 30px;
+  color: #fc7400;
+  font-size: 20px;
+  line-height: 35px;
+}
+/* line 318, ../../app/styles/custom/session.scss */
+.sc-learn-features ul, .sc-learn-features li {
+  color: #222222;
+  font-size: 18px;
+  line-height: 20px;
+  padding-bottom: 7px;
 }

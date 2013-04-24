@@ -10,6 +10,12 @@
       return $routeProvider.when('/', {
         templateUrl: 'views/main.html',
         controller: 'SessionCtrl'
+      }).when('/about', {
+        templateUrl: 'views/about.html',
+        controller: 'SessionCtrl'
+      }).when('/learn', {
+        templateUrl: 'views/learn.html',
+        controller: 'SessionCtrl'
       }).otherwise({
         redirectTo: '/'
       });

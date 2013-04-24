@@ -7,12 +7,7 @@ session.controller('SessionCtrl', [
 
 ($scope) ->
   
-    $scope.awesomeShit = [{name: 'Traveling'},
-                  {name: 'Hookah smoking'}]
-    $scope.fuckingIcons = [{name: 'accessibility-foundicon-guidedog'},
-                            {name: 'social-foundicon-github'},
-                            {name: 'foundicon-tools'},
-                            {name: 'enclosed-foundicon-cloud'}]
+
 
  
 ])

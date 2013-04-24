@@ -21,14 +21,16 @@ $schemeGray: #666666;
     padding-right: 50px;
 }
 
-.sc-hero-unit {
-    height: 300px;
+@media all and (min-width: 768px){
+    .sc-hero-unit {
+    min-height: 300px;
     background: url('images/heroback.jpg') no-repeat right;
+    }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
     .sc-hero-unit {
-        height: 300px;
+        min-height: 300px;
         background: #ffffff;
     }
 }
@@ -38,15 +40,16 @@ $schemeGray: #666666;
     margin-right: auto;
 }
 .h1-wht-trans {
-    background: rgba(255,255,255, 0.7);
+    background: rgba(255,255,255, 0.8);
     font-size: 36px;
     font-style: bold;
     width: auto;
     line-height: 40px;
+    color: $schemeOrange;
 }
 .p-wht-trans {
-    background: rgba(255,255,255, 0.7);
-    font-size: 18px;
+    background: rgba(255,255,255, 0.8);
+    font-size: 19px;
     font-style: normal;
     width: auto;
     line-height: 24px;
@@ -72,6 +75,19 @@ $schemeGray: #666666;
     z-index: -100;
 }
 
+.sc-back-gray-gradient {
+    background: $grayLighter; /* Old browsers */
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255,1)), color-stop(0.5, rgba(241,241,241,1)), color-stop(0.51, rgba(225,225,225,1)), to(rgba(246,246,246,1)));
+    background: -webkit-linear-gradient(rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 51%, rgba(246,246,246,1) 100%);
+    background: -moz-linear-gradient(rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 51%, rgba(246,246,246,1) 100%);
+    background: -o-linear-gradient(rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 51%, rgba(246,246,246,1) 100%);
+    background: linear-gradient(rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 51%, rgba(246,246,246,1) 100%); /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */ /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 7px;
+}
+
 .sc-feature-img {
     display: block;
     margin-left: auto;
@@ -82,12 +98,21 @@ $schemeGray: #666666;
     //text-align: center;
     margin-left: auto;
     margin-right: auto;
+    em {
+        color: $schemeDarkerBlue;
+        text-emphasis: bold;
+        font-style: normal;
+        font-weight: bolder;
+    }
 
 }
 
 .sc-gray-spacer {
     background: url("images/wavegrid.png");
     height: 20px;
+}
+.sc-white-spacer {
+    height: 10px;
 }
 
 .sc-back-main {
@@ -97,7 +122,7 @@ $schemeGray: #666666;
     //background: url('images/wavegrid.png');
 }
 .sc-footer {
-    background: url('images/wavegrid.png');
+    background: url('images/hex.png');
     //margin-top: 7px;
     min-height: 80px;
     padding-left: 50px;
@@ -110,7 +135,7 @@ $schemeGray: #666666;
 
     a:hover {
         color: $blue;
-    }
+    }   
 }
 
 .icon-gray {
@@ -161,19 +186,140 @@ $schemeGray: #666666;
     border-radius: 5px;
     background: lighten($grayLighter, 10%);
 }
-
-.secondary-beta-announcement {
-    background: url('images/banner.png') right no-repeat;
-    height: 77px;
-    color: $white;
-    text-align: right;
+.secondary-beta-announcement2 {
+    background: url(images/hex.png) repeat;
+    text-align: center;
     vertical-align: center;
-    h1 {
-        font-size: 28px;
-        color: #ffffff;
-        padding-top: 15px;
-        padding-right: 4px;
-
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-bottom: 7px;
+    //height: 60px;
+    .headliner {
+        text-align: center;
+        color: $schemeOrange;
+        font-size: 24px;
     }
-    margin-bottom: 10px;
+    .headfollow {
+        text-align: center;
+        color: $black;
+        font-size: 20px;
+    }
+    a {
+        color: $schemeDarkerBlue;
+        font-size: 20px;
+        line-height: 20px;
+        padding-top: -10px;
+        &:hover {
+        color: lighten($schemeDarkerBlue, 10%);
+        }
+    }
+    .wht-spacer {
+        background: $white;
+        height: 7px;
+    }
+
+}
+.sc-about-back {
+    background: url('images/hex.png') repeat; 
+}
+.sc-about-content {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #ffffff;
+    border-radius: 10px;
+
+    h5 {
+        color: $schemeDarkerBlue;
+        font-size: 28px;
+        text-decoration: bold;
+    }
+    color: $grayDarker;
+    font-size: 24px;
+    line-height: 28px;
+    
+}
+
+.sc-learn-back {
+    background: url('images/hex.png') repeat;
+}
+.sc-learn-content {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #ffffff;
+    border-radius: 10px;
+
+    h5 {
+        color: $schemeDarkerBlue;
+        font-size: 36px;
+        text-decoration: bold;
+        text-align: center;
+    }
+    color: $grayDarker;
+    font-size: 20px;
+    line-height: 24px;
+    em {
+        color: $schemeDarkerBlue;
+        text-emphasis: bold;
+        font-style: normal;
+        font-weight: bolder;
+    }
+}
+.sc-learn-long {
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+        h5 {
+        color: $schemeDarkerBlue;
+        font-size: 36px;
+        text-decoration: bold;
+        text-align: center;
+    }
+    color: $grayDarker;
+    font-size: 20px;
+    line-height: 24px;
+    em {
+        color: $schemeDarkerBlue;
+        text-emphasis: bold;
+        font-style: normal;
+        font-weight: bolder;
+    }
+
+}
+.sc-learn-feature-inset {
+    -moz-box-shadow:    2px 2px 2px 2px #ccc;
+    -webkit-box-shadow: 2px 2px 2px 2px #ccc;
+    box-shadow:         2px 2px 2px 2px #ccc;
+    padding: 1px 1px 1px 1px;
+    border-radius: 5px;
+    background: lighten($grayLighter, 10%);
+    margin-bottom: 15px;
+    margin-left: 0px;
+    margin-right: 15px;
+
+}
+
+.sc-learn-features {
+    vertical-align: center;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-right: 30px;
+    color: $schemeOrange;
+    font-size: 20px;
+    line-height: 35px;
+    ul, li {
+        color: $grayDarker;
+        font-size: 18px;
+        line-height: 20px;
+        padding-bottom: 7px;
+    }
+
 }
