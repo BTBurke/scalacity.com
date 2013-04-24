@@ -1,2 +1,5 @@
 temp/
 .sass-cache/
+dist/
+.s3cfg-scalacity
+_push.sh
